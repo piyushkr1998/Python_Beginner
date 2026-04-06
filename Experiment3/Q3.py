@@ -1,0 +1,10 @@
+n=int(input("Enter the value of n :"))
+a=0
+b=1
+
+for i in range (1,n+1):
+    print(a, end=" ")
+    next = a + b
+    a=b
+    b=next
+    
