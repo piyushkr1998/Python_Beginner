@@ -1,10 +1,7 @@
-n=int(input("Enter he value of n :"))
-list_score=[]
-for _ in range (n):
-    list_score.append(int(input()))
-    x = list(set (list_score))
-    x.sort()
-
-runnerup = x[-2]
-
-print("The runnerup is :",runnerup)
+def print_1_to_n (n):
+    if (n==0):
+        return 
+   
+    print_1_to_n(n-1)
+    print(n)
+print_1_to_n(5)    
