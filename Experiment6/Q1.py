@@ -1,23 +1,16 @@
-n=int(input("Enter the value of n :"))
+def find_max_min(numbers):
+    maximum = numbers[0]
+    minimum = numbers[0]
+    for num in numbers:
+        if num > maximum:
+            maximum = num
+        if num < minimum:
+            minimum = num
 
-count_0 = 0
-count_1 = 0
-count_2 = 0
-count_3 = 0
+    return maximum, minimum
 
-for _ in range (n):
+nums = [10, 45, 2, 78, 34, 89, 5]
+max_val, min_val = find_max_min(nums)
 
-    x = int(input(""))
-
-    if x==0 :
-        count_0 = count_0 + 1
-    elif x==1 :
-        count_1 = count_1 + 1
-    elif x==2:
-        count_2 = count_2 + 1
-    elif x==3:
-        count_3 = count_3 + 1
-print(count_0)
-print(count_1)
-print(count_2)
-print(count_3)                   
+print("Maximum:", max_val)
+print("Minimum:", min_val)
