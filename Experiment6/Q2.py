@@ -1,11 +1,10 @@
-n=int(input("Enter the value of n :"))
+def soc(n):
+    total=0
+    i=0
+    while i < n:
+        total = total + i*i*i
+        i=i+1
+    return total
+sum = soc(5)
 
-list = []
-for _ in range (n):
-     list.append(float(input()))
-
-t = tuple(list)
-avg = sum(t)/len(t)
-
-print("The created tuple is :",t)
-print("The the average of tuple is :",avg)
+print(sum)
